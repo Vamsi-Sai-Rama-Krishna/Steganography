@@ -42,17 +42,17 @@ This project involves following concepts of c :
 
 ---
 
-### **Running the Encoder**
+### **For Encoding, format of passing Command Line Arguments**
 ```bash
-./steganography -e <input_image.bmp> <secret_file.txt> <output_image.bmp>
+./steganography -e <input_image.bmp> <secret_file.txt> <output_image.bmp>[optioanl]
 ```
 - `input_image.bmp`: The original image to hide the data.
 - `secret_file.txt`: The file containing the secret message.
-- `output_image.bmp`: The image file with the hidden data.
+- `output_image.bmp[optional]`: The image file with the hidden data. [if not passed generates a "default_out_img.bmp"]
 
-### **Running the Decoder**
+### **For Decoding, format of passing Command Line Arguments**
 ```bash
-./steganography -d <encoded_image.bmp> <output_file.txt>
+./steganography -d <encoded_image.bmp> <output_file.txt>[optional]
 ```
 - `encoded_image.bmp`: The image containing the hidden data.
-- `output_file.txt`: The file to save the retrieved secret message.
+- `output_file.txt[optional]`: The file to save the retrieved secret message. [if not passed, generates a "default.txt" extracted data file.\]
