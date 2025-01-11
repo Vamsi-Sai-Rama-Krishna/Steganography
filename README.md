@@ -15,7 +15,7 @@ This project involves following concepts of c :
 
 ---
 
-## Features
+## Operations
 - **Encoding**: Embed/Encode secret data with a passcode into the least significant bits of a `.bmp` image file.
 - **Decoding**: Retrieve the hidden data from a `.bmp` image file.
 - **File Validation**: Ensure that the input image file is valid and meets the requirements for steganography.
@@ -44,15 +44,23 @@ This project involves following concepts of c :
 
 ### **For Encoding, format of passing Command Line Arguments**
 ```bash
-./steganography -e <input_image.bmp> <secret_file.txt> <output_image.bmp>[optioanl]
+./a.out -e <input_image.bmp> <secret_file.txt> <output_image.bmp>[optioanl]
 ```
 - `input_image.bmp`: The original image to hide the data.
 - `secret_file.txt`: The file containing the secret message.
-- `output_image.bmp[optional]`: The image file with the hidden data. [if not passed generates a "default_out_img.bmp"]
+- `output_image.bmp[optional]`: The image file with the hidden data. [if argument not passed, generates a "default_out_img.bmp"]
+
+---
 
 ### **For Decoding, format of passing Command Line Arguments**
 ```bash
-./steganography -d <encoded_image.bmp> <output_file.txt>[optional]
+./a.out -d <encoded_image.bmp> <output_file.txt>[optional]
 ```
 - `encoded_image.bmp`: The image containing the hidden data.
-- `output_file.txt[optional]`: The file to save the retrieved secret message. [if not passed, generates a "default.txt" extracted data file.\]
+- `output_file.txt[optional]`: The file to save the retrieved secret message. [if argument not passed, generates a "default.txt" extracted data file.]
+
+---
+
+## Contact
+- LinkedIn: http://www.linkedin.com/in/vamsisairamakrishna
+
