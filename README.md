@@ -1,5 +1,3 @@
-# Steganography
-
 # LSB Image Steganography Project
 
 ## Overview
