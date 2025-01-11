@@ -1,7 +1,7 @@
 # LSB Image Steganography Project
 
 ## Overview
-This project implements a **Least Significant Bit (LSB) Image Steganography System** using the C programming language. The application allows users to securely encode and decode secret messages into `.bmp` image files.
+This project implements a **Least Significant Bit (LSB) Image Steganography** using the C programming language in which secret data is encoded in an `.bmp` image file with a passcode, which we can securely decode secret data from `.bmp` image files.
 This project involves following concepts of c :
 -  Command Line Arguments.
 -  File Handling.
